@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # iching
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/joekroese/iching/workflows/R-CMD-check/badge.svg)](https://github.com/joekroese/iching/actions)
 <!-- badges: end -->
 
 The iching package is for consulting the I Ching from within R.

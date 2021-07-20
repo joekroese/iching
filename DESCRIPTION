@@ -9,6 +9,7 @@ Authors@R:
            comment = c(ORCID = "https://orcid.org/0000-0001-6995-6797"))
 Description: Consult the I Ching from within R.
 License: AGPL-3
+URL: https://joekroese.github.io/iching
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)

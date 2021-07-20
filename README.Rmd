@@ -1,0 +1,39 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# iching
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The iching package is for consulting the I Ching from within R.
+
+## Installation
+
+You can install the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("joekroese/iching")
+```
+## Example
+
+You can generate a hexagram in one line.
+
+```{r example}
+library(iching)
+generate_hexagram()
+```
+

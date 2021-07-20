@@ -4,24 +4,25 @@
 #' @export
 #'
 #' @examples
+#' generate_hexagram()
 generate_hexagram <- function() {
-  tibble::tibble(.rows = 6) |>
-    rowwise() |>
-    mutate(line = generate_line()) |>
-    ungroup()
+  dplyr::tibble(.rows = 6) |>
+    dplyr::rowwise() |>
+    dplyr::mutate(line = generate_line()) |>
+    dplyr::ungroup()
 }
 
 generate_line <- function() {
   stalks <- 50
   stalks <- stalks - 1
 
-  line <- tibble::tibble(turn, stalks, hand_pile, .rows = 0)
+  line <- dplyr::tibble(stalks = as.numeric(NA), hand_pile = as.numeric(NA), .rows = 0)
 
   for(i in 1:3) {
     hand_pile <- generate_number(stalks)
     stalks <- stalks - hand_pile
     line <- line |>
-      add_row(stalks = stalks, hand_pile = hand_pile)
+      dplyr::add_row(stalks = stalks, hand_pile = hand_pile)
   }
 
   line <- line |>

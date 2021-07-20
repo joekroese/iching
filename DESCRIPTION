@@ -1,5 +1,5 @@
 Package: iching
-Title: What the Package Does (One Line, Title Case)
+Title: Consult the I Ching from within R
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Jo",
@@ -7,9 +7,11 @@ Authors@R:
            role = c("aut", "cre"),
            email = "jo@jokroese.com",
            comment = c(ORCID = "https://orcid.org/0000-0001-6995-6797"))
-Description: What the package does (one paragraph).
+Description: Consult the I Ching from within R.
 License: AGPL-3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Imports: 
+    dplyr
